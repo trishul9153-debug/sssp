@@ -1,0 +1,1336 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123a78">
+  <meta name="description" content="Struggle Study Success Point, Sahiyara, Sitamarhi. Affordable coaching for Classes 1 to 12, Navodaya and NTSE preparation.">
+  <title>Struggle Study Success Point | Best Coaching</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue: #123a78;
+      --blue-dark: #092653;
+      --orange: #ff851b;
+      --orange-light: #fff0df;
+      --white: #ffffff;
+      --text: #24324a;
+      --muted: #64748b;
+      --light: #f4f7fc;
+      --border: #e5eaf3;
+      --shadow: 0 12px 35px rgba(18, 58, 120, 0.09);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
+
+    body {
+      font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+      background: var(--white);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, select, textarea {
+      font: inherit;
+    }
+
+    button, a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .container {
+      width: min(1140px, 90%);
+      margin: auto;
+    }
+
+    .section {
+      padding: 85px 0;
+    }
+
+    .section-light {
+      background: var(--light);
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin: 0 auto 42px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 5px 15px;
+      margin-bottom: 12px;
+      color: var(--orange);
+      background: var(--orange-light);
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .section-heading h2 {
+      color: var(--blue-dark);
+      font-size: clamp(27px, 4vw, 38px);
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 23px;
+      border: 2px solid transparent;
+      border-radius: 9px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.25s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-orange {
+      background: var(--orange);
+      color: var(--white);
+    }
+
+    .btn-orange:hover {
+      background: #e97008;
+    }
+
+    .btn-outline {
+      border-color: var(--blue);
+      color: var(--blue);
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    /* HEADER */
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      box-shadow: 0 3px 20px rgba(0,0,0,0.06);
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .logo {
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      width: 51px;
+      height: 51px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--blue), #2671d7);
+      border-radius: 14px;
+      font-size: 24px;
+      font-weight: 800;
+      box-shadow: 0 5px 15px rgba(18,58,120,.2);
+    }
+
+    .brand h1 {
+      color: var(--blue);
+      font-size: 16px;
+      line-height: 1.35;
+      font-weight: 800;
+    }
+
+    .brand p {
+      color: var(--muted);
+      font-size: 11px;
+      margin-top: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+    }
+
+    .nav-links > a:not(.btn) {
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .nav-links > a:not(.btn):hover {
+      color: var(--orange);
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: var(--light);
+      color: var(--blue);
+      border-radius: 8px;
+      width: 43px;
+      height: 43px;
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 90px 0 80px;
+      background:
+        radial-gradient(circle at 90% 20%, rgba(255,133,27,.15), transparent 25%),
+        linear-gradient(120deg, #f5f8ff 0%, #ffffff 65%);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      right: -130px;
+      bottom: -130px;
+      border: 45px solid rgba(18,58,120,.05);
+      border-radius: 50%;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 13px;
+      border-radius: 30px;
+      background: #e8f0ff;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      color: var(--blue-dark);
+      font-size: clamp(35px, 5vw, 54px);
+      line-height: 1.2;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    .hero h2 span {
+      color: var(--orange);
+    }
+
+    .hero-description {
+      color: var(--muted);
+      font-size: 16px;
+      margin-bottom: 17px;
+      max-width: 600px;
+    }
+
+    .hero-quote {
+      border-left: 4px solid var(--orange);
+      padding: 12px 16px;
+      margin: 20px 0 25px;
+      color: var(--blue);
+      font-weight: 600;
+      font-size: 15px;
+      background: rgba(255,255,255,.8);
+      border-radius: 0 10px 10px 0;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-card {
+      position: relative;
+      padding: 35px 28px;
+      background: var(--white);
+      border-radius: 25px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .hero-card-icon {
+      width: 82px;
+      height: 82px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 17px;
+      background: var(--orange-light);
+      border-radius: 25px;
+      font-size: 42px;
+    }
+
+    .hero-card h3 {
+      text-align: center;
+      color: var(--blue);
+      font-size: 23px;
+      margin-bottom: 6px;
+    }
+
+    .hero-card > p {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
+
+    .quick-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .info-item {
+      background: var(--light);
+      padding: 15px 10px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .info-item strong {
+      display: block;
+      color: var(--blue);
+      font-size: 21px;
+    }
+
+    .info-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* COURSES */
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .course-card {
+      padding: 27px 24px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      box-shadow: 0 6px 22px rgba(18,58,120,.04);
+      transition: .25s;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+      border-color: #c8d7f3;
+    }
+
+    .course-icon {
+      display: grid;
+      place-items: center;
+      width: 53px;
+      height: 53px;
+      background: #e8f0ff;
+      border-radius: 14px;
+      font-size: 26px;
+      margin-bottom: 18px;
+    }
+
+    .course-card h3 {
+      color: var(--blue);
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .course-card p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .course-card .mini-link {
+      display: inline-block;
+      color: var(--orange);
+      font-size: 13px;
+      font-weight: 700;
+      margin-top: 17px;
+    }
+
+    /* FEES */
+
+    .fee-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .fee-card {
+      position: relative;
+      padding: 29px 24px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      text-align: center;
+      transition: .25s;
+    }
+
+    .fee-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .fee-card.featured {
+      border: 2px solid var(--orange);
+    }
+
+    .fee-card h3 {
+      color: var(--blue);
+      font-size: 19px;
+      margin-bottom: 14px;
+    }
+
+    .price {
+      color: var(--blue-dark);
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1.4;
+    }
+
+    .price small {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--muted);
+    }
+
+    .fee-card p {
+      margin: 9px 0 20px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .fee-card .btn {
+      width: 100%;
+    }
+
+    .fee-note {
+      text-align: center;
+      margin-top: 26px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* FEATURES */
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      padding: 23px;
+      background: var(--white);
+      border-radius: 14px;
+      border: 1px solid var(--border);
+    }
+
+    .feature-icon {
+      flex-shrink: 0;
+      width: 47px;
+      height: 47px;
+      display: grid;
+      place-items: center;
+      background: var(--orange-light);
+      border-radius: 12px;
+      font-size: 23px;
+    }
+
+    .feature h3 {
+      font-size: 15px;
+      color: var(--blue);
+      margin-bottom: 5px;
+    }
+
+    .feature p {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* QUOTES */
+
+    .quote-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .quote-card {
+      padding: 28px;
+      border-radius: 16px;
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    .quote-card:nth-child(2) {
+      background: var(--orange);
+    }
+
+    .quote-card:nth-child(3) {
+      background: var(--blue-dark);
+    }
+
+    .quote-mark {
+      font-size: 36px;
+      opacity: .65;
+      line-height: 1;
+    }
+
+    .quote-card p {
+      font-size: 15px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    /* LEADERSHIP */
+
+    .leadership-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .leader-card {
+      padding: 32px;
+      border: 1px solid var(--border);
+      background: var(--white);
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(18,58,120,.05);
+    }
+
+    .leader-avatar {
+      display: grid;
+      place-items: center;
+      margin: 0 auto 18px;
+      width: 88px;
+      height: 88px;
+      background: #e8f0ff;
+      border-radius: 50%;
+      font-size: 39px;
+      border: 4px solid #fff0df;
+    }
+
+    .leader-card h3 {
+      color: var(--blue);
+      font-size: 21px;
+    }
+
+    .leader-role {
+      display: inline-block;
+      color: #b95800;
+      background: var(--orange-light);
+      padding: 5px 12px;
+      border-radius: 30px;
+      font-size: 11px;
+      font-weight: 700;
+      margin: 9px 0 12px;
+    }
+
+    .leader-card p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* ENROLL */
+
+    .enroll-section {
+      padding: 75px 0;
+      color: var(--white);
+      background: linear-gradient(120deg, var(--blue-dark), var(--blue));
+    }
+
+    .enroll-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .enroll-inner h2 {
+      font-size: clamp(25px, 4vw, 35px);
+      margin-bottom: 10px;
+    }
+
+    .enroll-inner p {
+      color: #dce8ff;
+      font-size: 14px;
+    }
+
+    .enroll-inner .btn {
+      flex-shrink: 0;
+    }
+
+    /* CONTACT */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 35px;
+      align-items: start;
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 16px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 15px;
+      padding: 18px;
+      background: var(--light);
+      border-radius: 12px;
+    }
+
+    .contact-icon {
+      flex-shrink: 0;
+      font-size: 23px;
+    }
+
+    .contact-item h3 {
+      font-size: 14px;
+      color: var(--blue);
+      margin-bottom: 3px;
+    }
+
+    .contact-item p,
+    .contact-item a {
+      font-size: 13px;
+      color: var(--muted);
+      overflow-wrap: anywhere;
+    }
+
+    .contact-item a:hover {
+      color: var(--orange);
+    }
+
+    .contact-form {
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-form h3 {
+      color: var(--blue);
+      font-size: 21px;
+      margin-bottom: 5px;
+    }
+
+    .contact-form > p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      display: block;
+      width: 100%;
+      padding: 12px 13px;
+      border: 1px solid #dbe3ef;
+      border-radius: 9px;
+      outline: none;
+      background: var(--white);
+      color: var(--text);
+      font-size: 13px;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(18,58,120,.08);
+    }
+
+    .form-group textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    .contact-form .btn {
+      width: 100%;
+    }
+
+    .form-note {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+      padding: 55px 0 20px;
+      background: #071a37;
+      color: var(--white);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 35px;
+    }
+
+    .footer h3 {
+      font-size: 17px;
+      margin-bottom: 16px;
+    }
+
+    .footer p,
+    .footer a {
+      font-size: 12px;
+      color: #c6d4eb;
+    }
+
+    .footer a:hover {
+      color: var(--orange);
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 9px;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(255,255,255,.13);
+      padding-top: 20px;
+    }
+
+    .footer-bottom p {
+      font-size: 11px;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 900;
+      display: grid;
+      place-items: center;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #20bd65;
+      color: white;
+      font-size: 25px;
+      box-shadow: 0 6px 22px rgba(0,0,0,.2);
+      transition: .2s;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 950px) {
+      .nav-links {
+        gap: 13px;
+      }
+
+      .nav-links > a:not(.btn) {
+        font-size: 12px;
+      }
+
+      .hero-grid {
+        gap: 30px;
+      }
+
+      .course-grid,
+      .fee-grid,
+      .features-grid,
+      .quote-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .section {
+        padding: 65px 0;
+      }
+
+      .navbar {
+        min-height: 70px;
+      }
+
+      .brand h1 {
+        font-size: 13px;
+      }
+
+      .brand p {
+        font-size: 10px;
+      }
+
+      .logo {
+        width: 43px;
+        height: 43px;
+        font-size: 20px;
+      }
+
+      .menu-toggle {
+        display: block;
+        flex-shrink: 0;
+      }
+
+      .nav-links {
+        position: absolute;
+        display: none;
+        top: 70px;
+        left: 0;
+        right: 0;
+        padding: 22px 5%;
+        background: var(--white);
+        box-shadow: 0 12px 20px rgba(0,0,0,.08);
+        align-items: stretch;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links > a:not(.btn) {
+        font-size: 14px;
+        padding: 4px 0;
+      }
+
+      .hero {
+        padding: 60px 0;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .hero h2 {
+        font-size: 38px;
+      }
+
+      .hero-description {
+        font-size: 14px;
+      }
+
+      .hero-card {
+        max-width: 480px;
+        width: 100%;
+        margin: auto;
+      }
+
+      .course-grid,
+      .fee-grid,
+      .features-grid,
+      .quote-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+
+      .course-card,
+      .fee-card {
+        padding: 22px 16px;
+      }
+
+      .feature {
+        padding: 17px 13px;
+        gap: 10px;
+      }
+
+      .feature-icon {
+        width: 39px;
+        height: 39px;
+        font-size: 19px;
+      }
+
+      .leadership-grid {
+        gap: 16px;
+      }
+
+      .leader-card {
+        padding: 25px 16px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .enroll-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+
+      .footer-grid > div:first-child {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .container {
+        width: 92%;
+      }
+
+      .brand {
+        gap: 8px;
+      }
+
+      .brand h1 {
+        font-size: 11px;
+      }
+
+      .brand p {
+        font-size: 9px;
+      }
+
+      .hero h2 {
+        font-size: 33px;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .course-grid,
+      .fee-grid,
+      .features-grid,
+      .quote-grid,
+      .leadership-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .course-card {
+        padding: 24px;
+      }
+
+      .quick-info {
+        gap: 9px;
+      }
+
+      .contact-form {
+        padding: 22px 17px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid > div:first-child {
+        grid-column: auto;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *, *::before, *::after {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="#home" class="brand" aria-label="Struggle Study Success Point home">
+        <div class="logo">SSS</div>
+        <div>
+          <h1>Struggle Study<br>Success Point</h1>
+          <p>Learn Today, Lead Tomorrow</p>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navLinks">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#fees">Fee Structure</a>
+        <a href="#features">Features</a>
+        <a href="#about">About Us</a>
+        <a href="#contact" class="btn btn-orange">Contact Us</a>
+      
+      </nav>
+    
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-tag">🎓 Quality Education for Every Student</div>
+
+          <h2>
+            Your Struggle Today,<br>
+            <span>Your Success Tomorrow!</span>
+          </h2>
+
+          <p class="hero-description">
+            Welcome to Struggle Study Success Point — a place where
+            students learn with confidence, understand concepts easily
+            and work towards their academic goals.
+          </p>
+
+          <p class="hero-description">
+            कक्षा 1 से 12 तक की पढ़ाई, सभी विषयों के साथ,
+            Navodaya एवं NTSE की विशेष तैयारी।
+          </p>
+
+          <div class="hero-quote">
+            "Teacher saath hai, vishwas tere paas hai,
+            sangharsh kar bekhauf, selection tere aas-paas hai."
+          </div>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-orange">Enroll Now →</a>
+            <a href="#fees" class="btn btn-outline">View Fee Structure</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-icon">📚</div>
+          <h3>Learn With Confidence</h3>
+          <p>Strong concepts. Regular practice. Personal guidance.</p>
+
+          <div class="quick-info">
+            <div class="info-item">
+              <strong>1–12</strong>
+              <span>Class Levels</span>
+            </div>
+            <div class="info-item">
+              <strong>6</strong>
+              <span>Learning Features</span>
+            </div>
+            <div class="info-item">
+              <strong>depend on you+</strong>
+              <span>Monthly Fees</span>
+            </div>
+            <div class="info-item">
+              <strong>2</strong>
+              <span>Contact Persons</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section class="section" id="courses">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Our Courses</span>
+          <h2>Courses Designed for Your Success</h2>
+          <p>Choose the right learning program for your class and goals.</p>
+        </div>
+
+        <div class="course-grid">
+          <article class="course-card">
+            <div class="course-icon">🧒</div>
+            <h3>Primary Classes</h3>
+            <p>Classes 1st to 5th. Build strong basics in reading, writing,
+              mathematics and other subjects.</p>
+            <a href="#fees" class="mini-link">View Fees →</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-icon">📘</div>
+            <h3>Middle Classes</h3>
+            <p>Classes 6th to 8th. Focus on conceptual clarity, practice
+              and preparation for school examinations.</p>
+            <a href="#fees" class="mini-link">View Fees →</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-icon">✍️</div>
+            <h3>Board Foundation</h3>
+            <p>Classes 9th and 10th. Subject-wise preparation, regular tests
+              and focused board-exam practice.</p>
+            <a href="#fees" class="mini-link">View Fees →</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-icon">🎯</div>
+            <h3>Classes 11th & 12th</h3>
+            <p>Special batches for senior students. Contact the coaching
+              team for subject combinations, timetable and fees.</p>
+            <a href="#contact" class="mini-link">Enquire Now →</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-icon">🏆</div>
+            <h3>Navodaya Preparation</h3>
+            <p>Special preparation focused on practice, reasoning,
+              mathematics and the relevant entrance-exam syllabus.</p>
+            <a href="#contact" class="mini-link">Enquire Now →</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-icon">💡</div>
+            <h3>NTSE Preparation</h3>
+            <p>Special preparation for NTSE-style aptitude and academic
+              concepts. Ask about current batch availability.</p>
+            <a href="#contact" class="mini-link">Enquire Now →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEES -->
+    <section class="section section-light" id="fees">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Affordable Education</span>
+          <h2>Our Fee Structure</h2>
+          <p>Simple and affordable monthly fees for school students.</p>
+        </div>
+
+        <div class="fee-grid">
+          <article class="fee-card">
+            <h3>Class 1st – 5th</h3>
+            <div class="price">₹250 <small>/ month</small></div>
+            <p>Foundation and basic concepts</p>
+            <a class="btn btn-outline" href="#contact"
+              data-enroll="Class 1st to 5th">Enroll Now</a>
+          </article>
+
+          <article class="fee-card">
+            <h3>Class 6th – 7th</h3>
+            <div class="price">₹300 <small>/ month</small></div>
+            <p>Concept learning and practice</p>
+            <a class="btn btn-outline" href="#contact"
+              data-enroll="Class 6th to 7th">Enroll Now</a>
+          </article>
+
+          <article class="fee-card">
+            <h3>Class 8th</h3>
+            <div class="price">₹400 <small>/ month</small></div>
+            <p>Subject-wise learning and revision</p>
+            <a class="btn btn-outline" href="#contact"
+              data-enroll="Class 8th">Enroll Now</a>
+          </article>
+
+          <article class="fee-card featured">
+            <h3>Class 9th</h3>
+            <div class="price">₹500 <small>/ month</small></div>
+            <p>Strong concepts and exam preparation</p>
+            <a class="btn btn-orange" href="#contact"
+              data-enroll="Class 9th">Enroll Now</a>
+          </article>
+
+          <article class="fee-card featured">
+            <h3>Class 10th</h3>
+            <div class="price">₹500 <small>/ month</small></div>
+            <p>Board-exam preparation and regular practice</p>
+            <a class="btn btn-orange" href="#contact"
+              data-enroll="Class 10th">Enroll Now</a>
+          </article>
+
+          <article class="fee-card featured">
+            <h3>Class 11th-12th arts</h3>
+            <div class="price">₹700 <small>/ month</small></div>
+            <p>Board-exam preparation and regular practice</p>
+            <a class="btn btn-orange" href="#contact"
+              data-enroll="Class 11th - 12th arts">Enroll Now</a>
+          </article>
+
+          <article class="fee-card featured">
+            <h3>Class 11th-12th science</h3>
+            <div class="price">₹1500 <small>/ month</small></div>
+            <p>Board-exam preparation and regular practice</p>
+            <a class="btn btn-orange" href="#contact"
+              data-enroll="Class 11th - 12th science">Enroll Now</a>
+          </article>
+
+          <article class="fee-card">
+            <h3>Special Batches</h3>
+            <div class="price">Enquire</div>
+            <p>Classes 1st–12th, all subjects, Navodaya and NTSE</p>
+            <a class="btn btn-outline" href="#contact"
+              data-enroll="Special Batch">Ask for Fees</a>
+          </article>
+        </div>
+
+        <p class="fee-note">
+          Note: Classes 11th–12th and special-batch fees should be confirmed
+          directly with the management.
+        </p>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Why Choose Us?</span>
+          <h2>Features That Support Your Learning</h2>
+          <p>A supportive learning environment that encourages every student
+            to understand, practise and improve.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature">
+            <div class="feature-icon">📝</div>
+            <div>
+              <h3>Weekly & Monthly Tests</h3>
+              <p>Regular assessments to identify progress and learning gaps.</p>
+            </div>
+          </article>
+          <script>
+  // Mobile menu toggle
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+      menuToggle.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('open');
+      menuToggle.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
+    });
+
+    // Close mobile menu when clicking nav links
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.textContent = '☰';
+      });
+    });
+  }
+
+  // YOUR PHONE NUMBER (Yahan apna WhatsApp number likhein)
+  const whatsappNumber = "+918809981031"; // Country code (91) ke sath bina '+' ya space ke
+
+  // Direct WhatsApp Message Trigger for Course Cards
+  document.querySelectorAll('.course-card .mini-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const courseCard = link.closest('.course-card');
+      const className = courseCard.querySelector('h3').innerText;
+      
+      const message = `Hello, mujhe *${className}* ki fees aur batch timing ke baare me jankari chahiye.`;
+      const encodedMsg = encodeURIComponent(message);
+      
+      window.open(`https://wa.me/${whatsappNumber}?text=${encodedMsg}`, '_blank');
+    });
+  });
+
+  // Direct WhatsApp Message Trigger for Fee Cards (Enroll Buttons)
+  document.querySelectorAll('.fee-card .btn').forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      const feeCard = button.closest('.fee-card');
+      const className = feeCard.querySelector('h3').innerText;
+      const feePrice = feeCard.querySelector('.price') ? feeCard.querySelector('.price').innerText.replace('\n', ' ') : '';
+      
+      const message = `Hello, main *${className}* me admission lena chahta/chahti hu.\nFees detail: *${feePrice}*.\nKripya admission process batayein.`;
+      const encodedMsg = encodeURIComponent(message);
+      
+      window.open(`https://wa.me/${whatsappNumber}?text=${encodedMsg}`, '_blank');
+    });
+  });
+</script>
+
+          <article class="feature">
+            <div class="feature-icon">📖</div>
+            <div>
+              <h3>Easy-to-Understand Notes</h3>
+          
